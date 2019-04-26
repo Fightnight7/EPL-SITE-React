@@ -3,9 +3,9 @@ import classes from './Footer.module.css'
 
 const Footer = (props) => {
     return (
-        <Footer className={classes.footer}>
+        <div className={classes.footer}>
             <p>SITE FOOTER</p>
-        </Footer>
+        </div>
     )
 };
 

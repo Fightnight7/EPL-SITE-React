@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import {Route} from "react-router-dom";
+// import {Route} from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Sidebar from "./Components/Sidebar/Sidebar";
-import Main from "./Components/Main/Main";
+import Content from "./Components/Content/Content";
 import Footer from "./Components/Footer/Footer";
 
 
@@ -12,7 +12,7 @@ const App = (props) => {
         <div className="main">
             <Header/>
             <Sidebar/>
-            <Main/>
+            <Content/>
             <Footer/>
         </div>
     )
