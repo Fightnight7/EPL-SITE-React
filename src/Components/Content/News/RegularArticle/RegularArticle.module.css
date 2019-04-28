@@ -1,0 +1,16 @@
+.regularArticle {
+    display: grid;
+    grid-template-areas:
+            "Article1 Article2"
+            "Article3 Article4";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    /*grid-gap: 10px;*/
+    border: 5px solid  #e1e1d0;
+    box-sizing: border-box;
+}
+
+.article {
+    padding: 10px;
+}
+

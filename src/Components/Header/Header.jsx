@@ -1,34 +1,34 @@
 import React from 'react';
 import classes from './Header.module.css'
+import {NavLink} from "react-router-dom";
 
 const Header = (props) => {
+    let LogoList = (props) => {
+        return (
+            <NavLink to={props.team}>
+                <img src={require("./images" + props.team + ".png")} alt=""/>
+            </NavLink>
+        )
+    };
+
+    let TeamLogosMap = props.teams.map(
+        t => <LogoList id={t.id} team={"/" + t.team} key={t.id}/>);
+
     return (
         <div className={classes.header}>
             <div className={classes.logo}>
-                <img className={classes.logoimg} src={require('./images/premier-league-logo-header.svg')} alt=""/>
+                <NavLink to="/"> <img className={classes.logoimg} src={require('./images/premier-league-logo-header.svg')} alt=""/></NavLink>
+                <div className={classes.buttonarea}>
+                    <button className={classes.button}>Авторизироваться</button>
+                    <button className={classes.button}>Голосования</button>
+                </div>
             </div>
-            <div></div>
+            <div className={classes.title}>
+                <h1><NavLink to="/">Английский футбол</NavLink></h1>
+
+            </div>
             <div className={classes.images}>
-                <img src={require('./images/Arsenal.png')} alt=""/>
-                <img src={require('./images/Bournemouth.png')} alt=""/>
-                <img src={require('./images/Brighton.png')} alt=""/>
-                <img src={require('./images/Burnley.png')} alt=""/>
-                <img src={require('./images/Cardiff.png')} alt=""/>
-                <img src={require('./images/Chelsea.png')} alt=""/>
-                <img src={require('./images/CrystalPalace.png')} alt=""/>
-                <img src={require('./images/Everton.png')} alt=""/>
-                <img src={require('./images/Fulham.png')} alt=""/>
-                <img src={require('./images/Huddersfield.png')} alt=""/>
-                <img src={require('./images/Leicester.png')} alt=""/>
-                <img src={require('./images/Liverpool.png')} alt=""/>
-                <img src={require('./images/MC.png')} alt=""/>
-                <img src={require('./images/MU.png')} alt=""/>
-                <img src={require('./images/Newcastle.png')} alt=""/>
-                <img src={require('./images/Southampton.png')} alt=""/>
-                <img src={require('./images/Tottenham.png')} alt=""/>
-                <img src={require('./images/Watford.png')} alt=""/>
-                <img src={require('./images/WestHam.png')} alt=""/>
-                <img src={require('./images/Wolves.png')} alt=""/>
+                {TeamLogosMap}
             </div>
         </div>
     )

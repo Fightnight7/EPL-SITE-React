@@ -1,0 +1,10 @@
+.team {
+    background-color: lightsalmon;
+    padding: 20px;
+}
+
+.image {
+    width: 80%;
+    /*height: 20%;*/
+    display: block;
+}

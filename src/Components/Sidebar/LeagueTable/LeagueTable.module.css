@@ -1,0 +1,16 @@
+.leaguetable {
+    padding: 20px;
+    color: white;
+}
+
+.leaguetable h3 {
+    margin: 10px 0;
+}
+
+.leaguetable td {
+    /*width: 50px;*/
+}
+
+.right {
+    border-right: 2px dashed white;
+}
