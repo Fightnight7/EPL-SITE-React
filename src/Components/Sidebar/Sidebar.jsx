@@ -7,7 +7,7 @@ const Sidebar = (props) => {
     return (
         <div className={classes.sidebar}>
             <Voting/>
-            <LeagueTable/>
+            <LeagueTable teams={props.teams}/>
         </div>
     )
 };

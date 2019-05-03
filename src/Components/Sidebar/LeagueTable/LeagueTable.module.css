@@ -1,16 +1,43 @@
 .leaguetable {
     padding: 20px;
     color: white;
+    border: 2px solid silver;
 }
 
 .leaguetable h3 {
     margin: 10px 0;
 }
 
-.leaguetable td {
+.right {
+    border-right: 2px dashed white;
+    padding: 0 5px;
+}
+
+.center {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    margin-top: 0;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*.header:hover {*/
+    /*text-decoration: underline;*/
+/*}*/
+
+.tableheader {
+    padding: 0 5px;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
     /*width: 50px;*/
 }
 
-.right {
-    border-right: 2px dashed white;
+.link:hover {
+    text-decoration: underline;
 }

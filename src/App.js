@@ -26,6 +26,7 @@ import Watford from "./Components/Content/TeamsInfo/Watford";
 import WestHam from "./Components/Content/TeamsInfo/WestHam";
 import Wolves from "./Components/Content/TeamsInfo/Wolves";
 import MainArticlePageContainer from "./Components/Content/News/MainArticlePage/MainArticlePageContainer";
+import LeagueTable from "./Components/Content/LeagueTableMain/LeagueTableMain";
 
 let TeamLogos = [
     {id: 1, team: "Arsenal"},
@@ -51,11 +52,10 @@ let TeamLogos = [
 ];
 
 const App = (props) => {
-
     return (
         <div className="main">
             <Header teams={TeamLogos}/>
-            <Sidebar/>
+            <Sidebar teams={TeamLogos}/>
             <Route exact path='/' render={() => <Content/>}/>
             <Route path='/Arsenal' render={() => <Arsenal/>}/>
             <Route path='/Bournemouth' render={() => <Bournemouth/>}/>
@@ -79,6 +79,7 @@ const App = (props) => {
             <Route path='/Wolves' render={() => <Wolves/>}/>
 
             <Route exact path='/MainArticle' render={() => <MainArticlePageContainer/>}/>
+            <Route exact path='/LeagueTable' render={() => <LeagueTable/>}/>
 
             <Footer/>
         </div>
