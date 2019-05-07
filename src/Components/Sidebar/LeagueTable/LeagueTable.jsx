@@ -3,7 +3,6 @@ import classes from './LeagueTable.module.css'
 import {NavLink} from "react-router-dom";
 
 const LeagueTable = () => {
-
     let LeagueTableData = [
         {id:1, team:'Mанчестер Cити', teamEng: "MC", games:36, point: 92},
         {id:2, team:'Ливерпуль', teamEng: "Liverpool", games:36, point: 91},
@@ -31,12 +30,12 @@ const LeagueTable = () => {
         return (
             <tbody>
                 <tr>
-                    <td className={classes.right}>{props.id}</td>
-                    <td className={classes.right}>
+                    <td className={classes.tableNum}>{props.id}</td>
+                    <td className={classes.tableTeam}>
                         <NavLink className={classes.link} to={"/" + props.teamEng}>{props.team}</NavLink>
                     </td>
-                    <td className={`${classes.right} ${classes.center}`}>{props.games}</td>
-                    <td className={`${classes.right} ${classes.center}`}>{props.point}</td>
+                    <td className={classes.tableGames}>{props.games}</td>
+                    <td className={classes.tablePoints}>{props.point}</td>
                 </tr>
             </tbody>
         )
@@ -49,7 +48,7 @@ const LeagueTable = () => {
             <NavLink className={classes.link} to="/LeagueTable">
                 <h2 className={classes.header}>Турнирная таблица</h2>
             </NavLink>
-            <table>
+            <table className={classes.table}>
                 <tbody>
                     <tr className={classes.tableheader}>
                         <th className={classes.center}>#</th>

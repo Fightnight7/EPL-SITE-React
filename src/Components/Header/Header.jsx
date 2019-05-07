@@ -25,7 +25,6 @@ const Header = (props) => {
             </div>
             <div className={classes.title}>
                 <h1><NavLink to="/">Английский футбол</NavLink></h1>
-
             </div>
             <div className={classes.images}>
                 {TeamLogosMap}

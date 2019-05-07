@@ -1,4 +1,11 @@
 .sidebar {
     grid-area: side;
-    background-color: teal;
+    background-color: #3f3f3f;
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+    }
 }

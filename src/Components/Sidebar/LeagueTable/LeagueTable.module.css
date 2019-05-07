@@ -1,16 +1,33 @@
 .leaguetable {
-    padding: 20px;
-    color: white;
-    border: 2px solid silver;
+    padding: 10px 0 10px 15px;
+    color: #e7e3e3;
+    border: 5px solid #e7e3e3;
 }
 
 .leaguetable h3 {
     margin: 10px 0;
 }
 
-.right {
-    border-right: 2px dashed white;
-    padding: 0 5px;
+.tableNum {
+    border-right: 2px dashed #e7e3e3;
+    text-align: center;
+    padding: 0;
+}
+
+.tableTeam {
+    border-right: 2px dashed #e7e3e3;
+    padding-left: 2px;
+}
+
+.tableGames {
+    border-right: 2px dashed #e7e3e3;
+    text-align: center;
+    padding: 0;
+}
+
+.tablePoints {
+    text-align: center;
+    padding: 0;
 }
 
 .center {
@@ -21,23 +38,30 @@
     text-align: center;
     margin-top: 0;
     text-decoration: none;
-    color: #fff;
+    color: #e7e3e3;
 }
 
-/*.header:hover {*/
-    /*text-decoration: underline;*/
-/*}*/
-
 .tableheader {
-    padding: 0 5px;
+    padding: 0 2px;
+}
+
+.table {
+    margin: 0 auto;
 }
 
 .link {
     text-decoration: none;
-    color: #fff;
-    /*width: 50px;*/
+    color: #e7e3e3;
 }
 
 .link:hover {
     text-decoration: underline;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .leaguetable {
+        width: 50%;
+        box-sizing: border-box;
+    }
 }

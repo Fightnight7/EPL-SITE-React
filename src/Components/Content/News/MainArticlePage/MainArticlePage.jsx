@@ -50,7 +50,7 @@ const MainArticlePage = (props) =>{
                     <div>
                         <h3>Комментарии к этой новости</h3>
                         <p>Макс <input type="text" onChange={GetCurrentComment} value={props.Comments.CurrentComment}/></p>
-                        <button onClick={PostComment}>Запостить</button>
+                        <button className={classes.button} onClick={PostComment}>Запостить</button>
                     </div>
                     {CommentsRow}
                 </div>

@@ -1,4 +1,8 @@
 .footer {
     grid-area: footer;
-    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #4CAF50;
 }
+
