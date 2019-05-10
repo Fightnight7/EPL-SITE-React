@@ -26,7 +26,7 @@ const RegularArticlePage = (props) =>{
 
     let CommentsRow = props.Comments.AllComments.map(t => {
         return (
-            <AllComments id={t.id} user={t.user} text={t.text}/>
+            <AllComments id={t.id} key={t.id} user={t.user} text={t.text}/>
         )
     });
 

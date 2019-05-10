@@ -4,6 +4,7 @@ import {Route} from "react-router-dom";
 import LeagueTable from "./LeagueTableMain/LeagueTableMain";
 import MainArticlePageContainer from "./News/MainArticlePage/MainArticlePageContainer";
 import RegularArticlePageContainer from "./News/RegularArticlePage/RegularArticlePageContainer";
+import ContactUs from "../Footer/ContactUs/ContactUs";
 import Arsenal from "./TeamsInfo/Arsenal"
 import Bournemouth from "./TeamsInfo/Bournemouth";
 import Brighton from "./TeamsInfo/Brighton";
@@ -37,6 +38,8 @@ const Content = () => {
             <Route exact path='/RegularArticle' render={() => <RegularArticlePageContainer/>}/>
 
             <Route exact path='/LeagueTable' render={() => <LeagueTable/>}/>
+
+            <Route path='/ContactUs' render={() => <ContactUs/>}/>
 
             <Route path='/Arsenal' render={() => <Arsenal/>}/>
             <Route path='/Bournemouth' render={() => <Bournemouth/>}/>
